@@ -1,0 +1,35 @@
+.section {
+    width: 100%;
+    height: calc(100vh - 110px);
+    padding-top: 110px;
+}
+
+.section__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.main_title span {
+    padding-right: 25px;
+}
+
+.main_title span:last-child {
+    padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .section__content {
+        align-items: flex-start;
+    }
+
+    .main_title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

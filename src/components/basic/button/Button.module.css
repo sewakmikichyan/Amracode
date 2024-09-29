@@ -1,0 +1,29 @@
+.btn {
+    width: auto;
+    height: auto;
+    padding: 6px 94px;
+    cursor: pointer;
+    transition: .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 0 #000000;
+    color: var(--black);
+    font-size: 16px;
+    font-family: "Orbitron";
+}
+
+.btn:hover {
+    transform: translate(1px, 1px);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+    .btn {
+        padding: 6px 50px;
+    }
+}

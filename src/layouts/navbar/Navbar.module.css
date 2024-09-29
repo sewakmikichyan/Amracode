@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-item {
+    position: relative;
+    display: inline;
+    list-style: none;
+}
+
+.navbar-item::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: .6px;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s ease-in-out;
+    pointer-events: none;
+}
+
+.navbar-item:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbar-link {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 735px) {
+    .navbar {
+        display: none;
+    }
+}

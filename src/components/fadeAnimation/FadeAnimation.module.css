@@ -1,0 +1,55 @@
+.animation-block {
+    position: absolute;
+    z-index: -1;
+    right: 450px;
+    top: 650px;
+    transform: translate(50%, -50%);
+}
+
+.animation {
+    position: relative;
+    margin-left: 500px;
+}
+
+.animation span {
+    position: absolute;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    animation: fade 2.5s ease-in-out infinite;
+}
+
+.animation span:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    animation-delay: .1s;
+}
+
+.animation span:nth-child(2) {
+    width: 115px;
+    height: 115px;
+    animation-delay: .2s;
+}
+
+.animation span:nth-child(3) {
+    width: 145px;
+    height: 145px;
+    animation-delay: .3s;
+}
+
+.animation span:nth-child(4) {
+    width: 200px;
+    height: 200px;
+    animation-delay: .4s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
