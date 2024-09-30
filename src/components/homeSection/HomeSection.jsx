@@ -7,9 +7,9 @@ import FadeAnimation from "../fadeAnimation/FadeAnimation";
 const HomeSection = () => {
     return (
         <section className={Styles.section}>
-            <Animation size={1600} color="var(--white)" speed="5"/>
+            <Animation size={1600} color="var(--white)" speed="4"/>
             <Animation size={1250} color="var(--gray)" speed="7" />
-            <Animation size={900} color="var(--white)" speed="6"/>
+            <Animation size={900} color="var(--white)" speed="8"/>
             <Animation size={550} color="var(--white)" speed="5"/>
             <FadeAnimation />
             <div className="container">
